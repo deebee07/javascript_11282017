@@ -14,6 +14,20 @@
 
   'use strict';
 
+  const message = {
+    text: 'first'
+  };
+
+  Object.freeze(message);
+
+  let message2 = message;
+
+  message2.text = 'second';
+
+
+  console.log(message.text);
+
+
 
 </script>
 
