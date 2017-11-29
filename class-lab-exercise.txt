@@ -1,0 +1,30 @@
+Lab Exercise:
+
+1. Create an Account Class, on the class set the following properties:
+
+Account Number
+Account Balance
+Account Owner
+Account Type (checking, savings, loan)
+Transactions (amt change, type of transaction such as withdrawal or deposit)
+
+Add a function to deposit, the function should accept the amount to be deposited
+
+2. Create a Savings Account class which inherits from the Account Class
+
+No special functionality
+
+3. Create a Checking Account class which inherits from the Account Class
+
+Add a function to withdraw money, the function should accept the amount to withdraw
+
+const checking = new CheckingAccount('111', 'Eric');
+checking.deposit(100)
+checking.withdraw(50)
+console.dir(checking.balance)
+console.dir(checking.transactions)
+
+const savings = new SavingAccount('111', 'Eric');
+savings.deposit(100)
+console.dir(savings.balance)
+console.dir(savings.transactions)
