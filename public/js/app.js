@@ -1,47 +1,46 @@
 
-console.log('start');
+
+// Promise wraps the asynchronous operation
+
+// class Promise {
+
+//   constructor(asyncOpFn) {
+
+//     const resolveFns = [];
+//     const rejectFns =[];
+
+//     const resolve = (results) => {
+//       resolveFns.forEach(resolveFn => resolveFn(results));
+//     };
+//     const reject = () => {};
+
+//     asyncOpFn(resolve, reject);
+
+//     return {
+//       then(fn) {
+//         resolveFns.push(fn);
+//       }
+//     };
+
+//   }
+// }
 
 
-function allDone() {
-  console.log('all done');
-}
+const youngMan = new Promise(function youngLady(resolve, reject) {
 
-setTimeout(function() {
-  console.log('timeout expired 1');
-}, 1000);
+  setTimeout(function() {
+    resolve('yes, but my mom and dad are making me');
+    //reject('no, I have fallen in love with your best friend');
+  }, 2000);
 
-setTimeout(function() {
-  console.log('timeout expired 2');
-}, 500);
+});
 
-setTimeout(function() {
-  console.log('timeout expired 3');
-}, 2000);
+youngMan.then(function(results) {
+  console.log(results);
+  console.log('yay! she said yes!');
+}).then(function)..catch(function(results) {
+  console.log(results);
+  console.log('he is going to sign up for eHarmony...');
+});
 
-setTimeout(function() {
-  console.log('timeout expired 4');
-}, 4000);
-
-
-
-// setTimeout(function() {
-
-//     console.log('timeout expired 1');
-
-//     setTimeout(function() {
-//         console.log('timeout expired 2');
-
-//         setTimeout(function() {
-//             console.log('timeout expired 3');
-//         }, 1000);
-    
-
-//     }, 1000);
-  
-
-// }, 2000);
-
-
-
-console.log('made it here');
-
+console.log('young man is waiting...');
