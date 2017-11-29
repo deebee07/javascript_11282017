@@ -14,7 +14,6 @@
 
     'use strict';
 
-    
     class Person {
 
       constructor(firstName, lastName) {
@@ -42,17 +41,11 @@
 
     const s = new Student(1, 'Bob', 'Smith');
 
-    console.log(s.firstName);
+    console.log(s);
     console.log(s.getFullName());
     console.log(s.getRecordInfo());
 
-    const t = Object.create(s);
-
-    t.firstName = 'Jim';
-    t.lastName = 'Smith';
-    console.log(t.getFullName());
-    console.dir(t);
-        
-        
+  
+  
   </script>
 

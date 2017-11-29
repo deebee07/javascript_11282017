@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<title>Welcome to Introduction to ES2017!</title>
+<link rel="icon" href="data:,">
+<link href="css/site.css" rel="stylesheet">
+
+<main>
+  <h1>Welcome to Introduction to ES2017 for React/Redux Developers!</h1>
+</main>
+
+<script src="js/bundle.js"></script>
+
+<script>
+
+  'use strict';
+
+  const basePerson = {
+    getFullName: function() {
+      return this.firstName + ' ' + this.lastName;
+    }
+  };
+
+  const person = Object.create(basePerson);
+  person.firstName = 'Bob';
+  person.lastName = 'Smith';
+
+  const person2 = Object.create(basePerson);
+  person2.firstName = 'Jane';
+  person2.lastName = 'Smith';
+
+  basePerson.getFullName = function() {
+    console.log('the world is ending');
+  }
+
+  console.log(person.getFullName());
+  console.log(person2.getFullName());
+  console.log(person.getFullName === person2.getFullName);
+
+
+  // const person = {
+  //   firstName: 'Bob',
+  //   lastName: 'Smith',
+  //   address: { street: '123 Oak Lane', city: 'Mountain View', state: 'CA' },
+  // };
+
+  // const person2 = {
+  //   firstName: 'Jane',
+  //   lastName: 'Smith',
+  //   address: person.address,
+  //   getFullName: person.getFullName,
+  // }
+  
+  </script>
+
