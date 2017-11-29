@@ -1,0 +1,21 @@
+
+// Take this callback code, wrap it in a promise API so that my code at the bottom
+// can call the API, and the position using promises.
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+       console.log("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position) {
+    console.log(position); 
+}
+
+Bottom Code:
+
+getMyPosition().then(function(position) {
+  console.log(position);
+});
