@@ -6,7 +6,7 @@
       "model": "Fusion Hybrid",
       "year": 2016,
       "color": "red",
-      "price": 26000.00
+      "price": 26000
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "model": "Volt",
       "year": 2017,
       "color": "blue",
-      "price": 32000.00
+      "price": 32000
     },
     {
       "id": 3,
@@ -22,7 +22,87 @@
       "model": "S",
       "year": 2015,
       "color": "black",
-      "price": 100000.00
+      "price": 100000
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 4
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 5
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 6
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 7
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 8
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 9
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 10
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 11
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 12
+    },
+    {
+      "make": "Saturn",
+      "model": "SL2",
+      "year": 1999,
+      "color": "green",
+      "price": 15000,
+      "id": 13
     }
   ]
 }

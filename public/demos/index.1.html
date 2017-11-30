@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<title>Welcome to Introduction to ES2017!</title>
+<link rel="icon" href="data:,">
+<link href="css/site.css" rel="stylesheet">
+
+<main>
+  <h1>Welcome to Introduction to ES2017 for React/Redux Developers!</h1>
+</main>
+
+<script src="js/bundle.js"></script>
+
+<script>
+
+  const colors = [ 'red', 'yellow', 'blue' ];
+
+  // rest
+  const [ firstColor, secondColor, ...leftOverColor ] = colors;
+
+  // spread
+  const newColors = [ ...colors, 'orange', 'green' ];
+
+  function doIt(p1, p2, ...params) {
+
+  }
+
+  doIt(...[1,2,3])
+
+  const [ p1, p2, ...params ] = ...[1,2,3]
+  
+  console.log(newColors);
+
+  // const doIt = ({ address: { state }}) => {
+  //   console.log(state);
+  // };
+
+
+  // const person = {
+  //   firstName: 'Bob',
+  //   lastName: 'Smith',
+  //   address: {
+  //     street: '123 Oak Lane',
+  //     city: 'Las Vegas',
+  //     zipCode: '12345',
+  //     state: 'NV',
+  //   }
+  // };
+
+  // const firstName = 'Judy';
+
+  // const { firstName: fn, lastName, address: { street, city } } = person;
+
+  // doIt(person);
+
+  const mapStateToProps = ({ cars }) => ({ cars });
+
+  function mapStateToProps({ cars }) {
+    return { cars: cars };
+  };
+
+
+  params = args
+
+  const props = mapStateToProps({ cars: [] })
+                return ({ cars });
+
+</script>
+
+
+
+<script>
+
+  // async function getCars() {
+
+  //   const res = await fetch('http://localhost:3010/cars');
+  //   const cars = await res.json();
+
+  //   return cars;
+  // }
+
+  // getCars().then(cars => console.log(cars));
+
+</script>

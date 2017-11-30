@@ -9,3 +9,75 @@
 </main>
 
 <script src="js/bundle.js"></script>
+
+<script>
+
+  // const person = {
+  //   _firstName: 'Bob',
+  //   _lastName: 'Smith',
+
+  //   get firstName() {
+  //     console.log('getter');
+  //     return this._firstName;
+  //   },
+
+  //   set firstName(value) {
+  //     console.log('setter');
+  //     this._firstName = value;
+  //   }
+  // };
+
+  // Object.defineProperty(person, 'lastName', {
+  //   configurable: true,
+  //   enumerable: true,
+  //   get: function() {
+  //     return this._lastName;
+  //   },
+  //   set: function(value) {
+  //     this._lastName = value;
+  //   },
+  // });
+
+  // person.firstName = 'Sammy';
+  // console.log(person.firstName);
+  // person.lastName = 'Childs';
+  // console.log(person.lastName);
+  // console.log(person);
+
+
+  class Person {
+
+    constructor(firstName, lastName) {
+      this._firstName = firstName;
+      this._lastName = lastName;
+    
+    }
+
+    get firstName() {
+      return this._firstName;
+    }
+
+    set firstName(value) {
+      this._firstName = value;
+    }
+
+  }
+
+  const p1 = new Person('Bob','Smith');
+  const p2 = new Person('Jane','Smith');
+
+  console.log(p1.firstName, p2.firstName);
+  console.dir(p1);
+  console.dir(p2);
+
+  const { firstName } = p1;
+
+  console.log(firstName);
+
+
+
+
+
+
+</script>
+
